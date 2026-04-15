@@ -1,67 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard | Gestión Educativa UNJu</title>
 </head>
 <body>
-
-    <h1>Unju:Bienvenido Usuario</h1>
-
-    <div>
-
-        <h2>PROYECTO TOTALES </h2>
-
-
-    </div>
-
-    <div>
-
-        <h2>TAREAS PARA HOY </h2>
-
-
-
-    </div>
-
-    <div>
-        <h2>MENSAJES PENDIENTES</h2>
-        
-
-
-
-
-    </div>
-
-
-    <div>
-
-        <H2>SECCION DE NOVEDADES</H2>
-
-        <OL>
-            <li>creacion del grupo 13</li>
-            <li>Maria subio un archivo</li>
-            <li>se crearon las carpetas</li>
-            <li>Se repartieron los temas </li>
-
-
-        </OL>
-
-
-
-
-
-
-    </div>
-    
-   
-
     <header>
+        <h1>GESTION DE PROYECTOS EDUCATIVOS</h1>
+
+        <h1>Panel de Gestión</h1>
+
+    <section>
+        <h2>Explorador de Proyectos</h2>
+        <p>Mirá los proyectos de los alumnos aqui.</p>
+        <a href="proyectos.html">Ir al Explorador</a> </section>
+
+    <section>
+        <h2>Detalles de Proyectos</h2>
+        <p>Información completa de todos los proyectos presentados.</p>
+        <a href="detalle.html">Ver Detalles</a>
+    </section>
+
+    <section>
+        <h2>Perfil</h2>
+        <p>Configurá tu usuario y preferencias de la plataforma.</p>
+        <a href="perfil.html">Ver Perfil</a>
+    </section>
 
     </header>
-
-    <footer>
-
-    </footer>
+    <main>
+        <section>
+            <h2>TOTALIDAD DE PROYECTOS</h2>
+            <p>Listado de la cantidad de proyectos presentados.</p>
+            <ul>
+                <li>Proyecto: HTML</li>
+                <li>Proyecto: CSS</li>
+                <li>Proyecto: JAVASCRIPT</li>
+                <li>Proyecto: PYTON</li>
+                <li>Proyecto: C++</li>
+            </lu>
+        </section>
+        <section>
+            <h2>TAREAS PENDIENTES</h2>
+            <p>Actividades a presentar durante el cuatrimestre.</p>
+            <ul>
+                <li>Informe sobre C#.</li>
+                <li>Informe sobre Base de datos SQL.</li>
+                <li>Informe sobre las generaciones de computadoras.</li>
+                <li>Informe sobre JAVA.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>MENSAJES PENDIENTES</h2>
+            <p>Aqui vas a poder dejar y leer comentarios respecto a los proyectos.</p>
+            <ul>
+                <li>Disculpe profe me atrase con el trabajo sobre HTML/CSS soy valentin del grupo g13.</li>
+            </ul>
+            <form>
+        <label for="nuevo-mensaje">Escribe tu comentario:</label>
+        <br>
+        <textarea id="nuevo-mensaje" name="mensaje" rows="3" cols="55" placeholder="Escribir..."></textarea>
+        
+        <br>
+        
+        <button type="submit">Enviar Mensaje</button>
+        </form>
+        </section>
+        <section>
+            <h3>ACTUALIZACIONES</h3>
+            <ul>
+                <li>Valentina Rojas subio un archivo HTML.</li>
+                <li>Lucía Martínez modifico el archivo CSS.</li>
+                <li>Renata Vargas borro el archivo JAVASCRIPT.</li>
+                <li>Renata Vargas subio el archivo JAVASCRIPT.</li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
