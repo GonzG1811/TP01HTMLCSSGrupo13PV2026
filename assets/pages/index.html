@@ -4,34 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard | Gestión Educativa UNJu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css"/>
 </head>
 <body>
-    <header>
-        <h1>GESTION DE PROYECTOS EDUCATIVOS</h1>
+<header class="header-menu">
+    <h2 id="titulo">Explorador de Proyectos</h2>
 
-        <h1>Panel de Gestión</h1>
-
-    <section>
-        <h2>Explorador de Proyectos</h2>
-        <p>Mirá los proyectos de los alumnos aqui.</p>
-        <a href="proyectos.html">Ir al Explorador</a> </section>
-
-    <section>
-        <h2>Detalles de Proyectos</h2>
-        <p>Información completa de todos los proyectos presentados.</p>
-        <a href="detalle.html">Ver Detalles</a>
-    </section>
-
-    <section>
-        <h2>Perfil</h2>
-        <p>Configurá tu usuario y preferencias de la plataforma.</p>
-        <a href="perfil.html">Ver Perfil</a>
-    </section>
-
-    </header>
+    <nav class="nav-menu"> 
+        <ul class="nav-lista">
+            <li class="nav-items"><a href="index.html" class="nav-link">INICIO</a></li>
+            <li class="nav-items"><a href="proyectos.html" class="nav-link">PROYECTOS</a></li>
+            <li class="nav-items"><a href="perfil.html" class="nav-link">PERFIL</a></li>
+            <li class="nav-items"><a href="index.html" class="nav-link">CONTACTO</a></li>
+            <li class="nav-items perfil">
+            <span class="user-nombre">valen</span>
+            <img src="../img/adriel.png" alt="fotito" class="avatar"></li>
+        </ul>
+    </nav>
+</header>
     <main>
         <section>
-            <h2>TOTALIDAD DE PROYECTOS</h2>
+            <h2>LO MAS DESTACADO</h2>
             <p>Listado de la cantidad de proyectos presentados.</p>
             <ul>
                 <li>Proyecto: HTML</li>
@@ -51,23 +47,7 @@
                 <li>Informe sobre JAVA.</li>
             </ul>
         </section>
-        <section>
-            <h2>MENSAJES PENDIENTES</h2>
-            <p>Aqui vas a poder dejar y leer comentarios respecto a los proyectos.</p>
-            <ul>
-                <li>Disculpe profe me atrase con el trabajo sobre HTML/CSS soy valentin del grupo g13.</li>
-            </ul>
-            <form>
-        <label for="nuevo-mensaje">Escribe tu comentario:</label>
-        <br>
-        <textarea id="nuevo-mensaje" name="mensaje" rows="3" cols="55" placeholder="Escribir..."></textarea>
-        
-        <br>
-        
-        <button type="submit">Enviar Mensaje</button>
-        </form>
-        </section>
-        <section>
+                <section>
             <h3>ACTUALIZACIONES</h3>
             <ul>
                 <li>Valentina Rojas subio un archivo HTML.</li>
@@ -76,6 +56,58 @@
                 <li>Renata Vargas subio el archivo JAVASCRIPT.</li>
             </ul>
         </section>
+        <section>
+            <h2>CONSULTAS</h2>
+            <h3>HORARIO DE ATENCION</h3>
+            <P>Lunes a Viernes 7:30 am a 12:45 am</P>
+            <H3>NUESTRA UBICACION</H3>
+            <P>Avda. Bolivia N° 1685 B° Los Huaicos
+            San Salvador de Jujuy, Jujuy - Argentina</P>
+        <form>
+        <div>
+
+            <input type="text" id="nombre" name="nombre" placeholder="nombre..">
+        </div>
+        <div>
+            <input type="email" id="email" name="email" placeholder="correo">
+        </div>
+        <div>
+            <input type="email" id="email" name="email" placeholder="asunto">
+        </div>
+        <br>
+        <textarea id="nuevo-mensaje" name="mensaje" rows="3" cols="55" placeholder="Escribir..."></textarea>
+        <br>
+        <button type="submit">Enviar Mensaje</button>
+        </form>
+        </section>
     </main>
+    <footer>
+        <div>
+            <h4>contacto</h4>
+            <ul>
+                <li>Universidad Nacional de Jujuy - UNJu</li>
+                <li>Avda. Bolivia N° 1685 B° Los Huaicos
+                San Salvador de Jujuy, Jujuy - Argentina
+                </li>
+                <li> WhatsApp: 3884708223</li>
+                <LI>Correo oficial: virtual@unju.edu.ar</LI>
+            </ul>
+        </div>
+        <div>
+            <h4>informacion</h4>
+            <ul>
+                <li>terminos del servicio</li>
+                <li>politicas de privacidad</li>
+            </ul>
+        </div>
+        <div>
+            <h4>programacion y diseño</h4>
+            <ul>
+                <li>grupo13</li>
+                <li>grupo13@gmail.com</li>
+                <li>jujuy-argentina-2026</li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
