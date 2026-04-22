@@ -1,0 +1,100 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9fc;
+    color: #373333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Navegación */
+nav {
+    background: #a5ebaf;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #cf9797;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Secciones principales */
+section {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Encabezados */
+h2 {
+    color: #2e465e;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+h3 {
+    color: #304b65;
+    margin-top: 20px;
+}
+
+h5 {
+    margin-top: 25px;
+    color: #b74ae2;
+    font-size: 1rem;
+}
+
+/* Párrafos */
+p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/* Listas */
+ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+/* Enlaces */
+a {
+    color: #72bace;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Separadores */
+hr {
+    margin: 30px auto;
+    max-width: 800px;
+    border: 2px solid #ccc;
+}

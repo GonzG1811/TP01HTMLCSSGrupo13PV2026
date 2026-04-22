@@ -1,33 +1,102 @@
-
 <!DOCTYPE html>
 <html lang="en">
 </head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proyectos</title>
+<link rel="stylesheet" href="./css/proyectos.css"/> 
 </head>
+
 <body>
-    <h1>Pagina Proyectos</h1>
     <nav>
-    <ul>
-        <li><a href="./index.html">inicio</a></li>
-        <li><a href="./proyectos.html">Proyectos</a></li>
-  
-    </ul>
+        <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./detalle.html">Detalle</a></li>
+            <li><a href="./perfil.html">Perfil</a></li>
+        </ul>
     </nav>
-    <form>
-  <label for="categoria">Categoría:</label>
-  <select id="categoria" name="categoria">
-    <option value="">-- Selecciona --</option>
-    <option value="Categoria">Categoria</option>
-    <option value="años de trabajo">años de trabajo</option>
-    <option value="Estado">Estado</option>
-  </select>
-  
-  <button type="submit">Filtrar</button>
-</form>
+    <main class="principal"
+    >
+    <aside class="filtros">
+        <h1>Filtros de busqueda</h1>
+        <form action="#" metrhod="GET">
+
+            <label for="categoria">Categoría:</label>
+            <select id="categoria" name="categoria">
+                <option value="">-- Selecciona --</option>
+                <option value="Categoria">Categoria</option>
+                <option value="años de trabajo">años de trabajo</option>
+                <option value="Estado">Estado</option>
+            </select>
+            <label for="añio">AÑO:</label>
+            <select name="añio" id="añio">
+                <option value="todos">todos</option>
+                <option value="2026">2026</option>
+                <option value="2025">2025</option>
+
+            </select>
+            <label for="estado">Estado:</label>
+            <select name="estado" id="estado">
+                <option value="todos">Todos</option>
+                <option value="en-curso">En curso</option>
+                <option value="finalizado">Finalizado</option>
+            </select>
+
+            <button type="submit">Filtrar</button>
 
 
-    
+        </form>
+        </aside>
+        <section class="contenedor">
+            <div class="card">
+                <img src="img/web_institucional.pn" alt="">
+                <h3>Sistema de Alumnos</h3>
+                <p>Gestión de estudiantes.</p>
+                <span>Categoria: programacion</span>
+                <a href="detalle.html">Ver detalle</a>
+            </div>
+
+            <div class="card">
+                <img src="img/base_datos.png" alt="">
+                <h3>Base de Datos</h3>
+                <p>Diseño de base de datos.</p>
+                <span>Categoria: bases-datos</span>
+                <a href="detalle.html">Ver detalle</a>
+            </div>
+
+            <div class="card">
+                <img src="img/organizador_tarea.webp" alt="">
+                <h3>App Tareas</h3>
+                <p>Organización de tareas.</p>
+                <span>Categoria: desarrollo</span>
+                <a href="detalle.html">Ver detalle</a>
+            </div>
+
+            <div class="card">
+                <img src="img/control_ventas.png" alt="">
+                <h3>Sistema Ventas</h3>
+                <p>Control de ventas.</p>
+                <span>Categoria: programacion</span>
+                <a href="detalle.html">Ver detalle</a>
+            </div>
+
+        </section>
+
+
+
+
+
+    </main>
+
+    <footer>
+    </footer>
+
+</body>
+
+ <button type="submit">Filtrar</button>
+ </form>
+
+
+
 </body>
 </html>
