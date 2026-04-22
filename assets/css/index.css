@@ -1,30 +1,54 @@
+:root {
+    --fuente-principal: 'roboto', 'Arial Narrow', Arial, sans-serif;
+
+    --color-azul-inicio: #0B4FE0;
+    --color-violeta-fin: #510BE0;
+    --color-blanco-titulo: white;
+    --color-azul-borde: rgb(59, 33, 255); /* El color de tu imagen */
+    --color-gris-borde: #ddd;
+    --max-ancho-pagina: 1000px;
+    
+}
 * {
   margin: 0;
-  padding: 1;
+  padding: 0;
   box-sizing: border-box;
 }
 body {
-    font-family:'roboto', 'Arial Narrow', Arial, sans-serif
+    font-family: var(--fuente-principal);
 }
+
 .header-menu {
-    background: linear-gradient(to right, #0B4FE0, #510BE0);
-    display:flex;
+    background: linear-gradient(to right, var(--color-azul-inicio), var(--color-violeta-fin));
+    
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    color:white
+    color: var(--color-blanco);
+    padding: 40px 0px;
+    border-top: 3px solid var(--color-blanco-titulo);
+    border-bottom: 3px solid var(--color-blanco-titulo);
 }
-.titulo{
-    font-size: 300 px;
+#titulo{
+    font-size: 40px;          
+    font-weight: 800;         
+    color: var(--color-blanco-titulo);            
+    padding-left: 20px;       
+    margin-left: 20px;        
+    border-left: 4px solid white; 
+    text-transform: uppercase; 
+    letter-spacing: 2px;     
+    line-height: 1;
+
 }
 .nav-lista{
     list-style-type: none;
     display: flex;
-    color: white;
-    width: 100%;
+    justify-content: flex-end; 
+    align-items: center;      
+    gap: 25px;               
     margin: 0;
-    padding: 0;
-    gap: 15px;
-
+    padding: 0 20px;        
 }
 .nav-item{
     color: white;
@@ -40,14 +64,155 @@ body {
         text-decoration: none;
 }
 .nav-link:hover{
-    color:white;
-    text-decoration: none;
+    color: #ccc; 
+    text-decoration: underline; 
+    transition: 0.3s;
 }
 .nav-link:active{
     color:white;
     text-decoration: none;
 }
+.nav-items.perfil {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 15px;
+    border: 1.5px solid white; 
+    border-radius: 50px;       
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.nav-items.perfil:hover {
+    background: rgba(255, 255, 255, 0.2); 
+}
+
+.user-nombre {
+    color: white;
+    font-weight: bold;
+}
 .avatar{
-    width: 70px;
-    border-radius: 10px;
+    width: 35px;   
+    height: 35px;
+    border-radius: 50%; 
+    object-fit: cover;
+}
+
+#cuerpo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Esto centra el contenido horizontalmente */
+    text-align: left;
+    min-height: 100vh;
+    padding: 60px 20px; /* 20px a los lados para que no toque el borde en celulares */
+    border-top: 10px solid var(--color-azul-borde);
+}
+
+.contenido {
+    width: 100%;
+    max-width: var(--max-ancho-pagina); /* Usa la variable del root */
+    margin: 0 auto; /* El "auto" a los lados es el truco para centrar */
+    margin-bottom: 50px;
+}
+
+.titulo-p, .titulo-sec, .titulo-primario {
+    font-size: 50px; /* Mantenemos el tamaño grande que pediste */
+    margin-bottom: 25px;
+    border-bottom: 1px solid var(--color-gris-borde);
+    padding-bottom: 5px;
+}
+
+/* Listas */
+ul, .proyectos, .lista-tareas, .lista-historial {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    text-align: left;
+    font-size: 1.1rem; /* Un poco más grande para que sea legible */
+    line-height: 1.8;   /* Más espacio entre líneas para que no se vea amontonado */
+}
+
+
+#consultas {
+
+    background: linear-gradient(to right, var(--color-azul-inicio), var(--color-violeta-fin));
+    color: white;
+    width: 100%;
+    padding: 60px 50px; 
+    max-width: none; 
+    border-radius: 0;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#consultas h2, #consultas h3 {
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 20px;
+}
+
+.entrada-texto, .area-texto {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;             
+    border-radius: 5px;
+    background-color: white;  
+    color: #333;
+}
+
+
+.boton-enviar {
+    width: 100%;
+    padding: 15px;
+    background-color: #510BE0; 
+    color: white;
+    border: 2px solid white;  
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton-enviar:hover {
+    background-color: white;
+    color: #0B4FE0; 
+}
+
+#pie {   
+    background: linear-gradient(to right, var(--color-azul-inicio), var(--color-violeta-fin));
+    color: white;          
+    padding: 40px 20px;      
+    display: flex;            
+    justify-content: space-around; 
+    flex-wrap: wrap;         
+    border-top: 3px solid white; 
+    text-align: left;
+}
+
+.columna-pie {
+    margin: 10px;
+    min-width: 200px; 
+}
+
+.titulo-pie {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); 
+    display: inline-block;
+}
+
+.lista-pie {
+    list-style: none; 
+    padding: 0;
+}
+
+.lista-pie li {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    opacity: 0.9; 
 }

@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/index.css"/>
 </head>
 <body>
 <header class="header-menu">
@@ -25,89 +25,96 @@
         </ul>
     </nav>
 </header>
-    <main>
-        <section>
-            <h2>LO MAS DESTACADO</h2>
-            <p>Listado de la cantidad de proyectos presentados.</p>
-            <ul>
-                <li>Proyecto: HTML</li>
-                <li>Proyecto: CSS</li>
-                <li>Proyecto: JAVASCRIPT</li>
-                <li>Proyecto: PYTON</li>
-                <li>Proyecto: C++</li>
-            </lu>
-        </section>
-        <section>
-            <h2>TAREAS PENDIENTES</h2>
-            <p>Actividades a presentar durante el cuatrimestre.</p>
-            <ul>
-                <li>Informe sobre C#.</li>
-                <li>Informe sobre Base de datos SQL.</li>
-                <li>Informe sobre las generaciones de computadoras.</li>
-                <li>Informe sobre JAVA.</li>
-            </ul>
-        </section>
-                <section>
-            <h3>ACTUALIZACIONES</h3>
-            <ul>
-                <li>Valentina Rojas subio un archivo HTML.</li>
-                <li>Lucía Martínez modifico el archivo CSS.</li>
-                <li>Renata Vargas borro el archivo JAVASCRIPT.</li>
-                <li>Renata Vargas subio el archivo JAVASCRIPT.</li>
-            </ul>
-        </section>
-        <section>
-            <h2>CONSULTAS</h2>
-            <h3>HORARIO DE ATENCION</h3>
-            <P>Lunes a Viernes 7:30 am a 12:45 am</P>
-            <H3>NUESTRA UBICACION</H3>
-            <P>Avda. Bolivia N° 1685 B° Los Huaicos
-            San Salvador de Jujuy, Jujuy - Argentina</P>
-        <form>
-        <div>
+<main id="cuerpo">
+    <section class="contenido" id="destacados">
+        <h2 class="titulo-p">LO MAS DESTACADO</h2>
+        <p class="descripcion">Listado de la cantidad de proyectos presentados.</p>
+        <ul class="proyectos">
+            <li>Proyecto: HTML</li>
+            <li>Proyecto: CSS</li>
+            <li>Proyecto: JAVASCRIPT</li>
+            <li>Proyecto: PYTHON</li>
+            <li>Proyecto: C++</li>
+        </ul>
+    </section>
 
-            <input type="text" id="nombre" name="nombre" placeholder="nombre..">
+    <section class="contenido" id="tareas-pendientes">
+        <h2 class="titulo-sec">TAREAS PENDIENTES</h2>
+        <p class="descripcion">Actividades a presentar durante el cuatrimestre.</p>
+        <ul class="lista-tareas">
+            <li>Informe sobre C#.</li>
+            <li>Informe sobre Base de datos SQL.</li>
+            <li>Informe sobre las generaciones de computadoras.</li>
+            <li>Informe sobre JAVA.</li>
+        </ul>
+    </section>
+
+    <section class="contenido" id="actualizaciones">
+        <h3 class="titulo-sec">ACTUALIZACIONES</h3>
+        <ul class="lista-historial">
+            <li>Valentina Rojas subio un archivo HTML.</li>
+            <li>Lucía Martínez modifico el archivo CSS.</li>
+            <li>Renata Vargas borro el archivo JAVASCRIPT.</li>
+            <li>Renata Vargas subio el archivo JAVASCRIPT.</li>
+        </ul>
+    </section>
+
+    <section class="consultas" id="consultas">
+        <h2 class="titulo-primario">CONSULTAS</h2>
+        
+        <div class="info-contacto">
+            <h3 class="titulo-secundario">HORARIO DE ATENCION</h3>
+            <p>Lunes a Viernes 7:30 am a 12:45 am</p>
+            
+            <h3 class="titulo-secundario">NUESTRA UBICACION</h3>
+            <p>Avda. Bolivia N° 1685 B° Los Huaicos <br>
+            San Salvador de Jujuy, Jujuy - Argentina</p>
         </div>
-        <div>
-            <input type="email" id="email" name="email" placeholder="correo">
-        </div>
-        <div>
-            <input type="email" id="email" name="email" placeholder="asunto">
-        </div>
-        <br>
-        <textarea id="nuevo-mensaje" name="mensaje" rows="3" cols="55" placeholder="Escribir..."></textarea>
-        <br>
-        <button type="submit">Enviar Mensaje</button>
+
+        <form class="formulario">
+            <div class="grupo">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre..." class="entrada-texto">
+            </div>
+            <div class="grupo-input">
+                <input type="email" id="correo" name="email" placeholder="Correo..." class="entrada-texto">
+            </div>
+            <div class="grupo-input">
+                <input type="text" id="asunto" name="asunto" placeholder="Asunto..." class="entrada-texto">
+            </div>
+            
+            <textarea id="mensaje" name="mensaje" rows="3" placeholder="Escribir mensaje..." class="area-texto"></textarea>
+            
+            <button type="submit" class="boton-enviar">Enviar Mensaje</button>
         </form>
-        </section>
-    </main>
-    <footer>
-        <div>
-            <h4>contacto</h4>
-            <ul>
-                <li>Universidad Nacional de Jujuy - UNJu</li>
-                <li>Avda. Bolivia N° 1685 B° Los Huaicos
-                San Salvador de Jujuy, Jujuy - Argentina
-                </li>
-                <li> WhatsApp: 3884708223</li>
-                <LI>Correo oficial: virtual@unju.edu.ar</LI>
-            </ul>
-        </div>
-        <div>
-            <h4>informacion</h4>
-            <ul>
-                <li>terminos del servicio</li>
-                <li>politicas de privacidad</li>
-            </ul>
-        </div>
-        <div>
-            <h4>programacion y diseño</h4>
-            <ul>
-                <li>grupo13</li>
-                <li>grupo13@gmail.com</li>
-                <li>jujuy-argentina-2026</li>
-            </ul>
-        </div>
-    </footer>
+    </section>
+</main>
+<footer id="pie">
+    <div class="col-pie">
+        <h4 class="titu-pie">CONTACTO</h4>
+        <ul class="lista-pie">
+            <li>Universidad Nacional de Jujuy - UNJu</li>
+            <li>Avda. Bolivia N° 1685 B° Los Huaicos, Jujuy</li>
+            <li>WhatsApp: 3884708223</li>
+            <li>Correo: virtual@unju.edu.ar</li>
+        </ul>
+    </div>
+    
+    <div class="col-pie">
+        <h4 class="titu-pie">INFORMACION</h4>
+        <ul class="list-pie">
+            <li>Términos del servicio</li>
+            <li>Políticas de privacidad</li>
+        </ul>
+    </div>
+    
+    <div class="col-pie">
+        <h4 class="titu-pie">DISEÑO Y PROGRA</h4>
+        <ul class="list-pie">
+            <li>Grupo 13</li>
+            <li>grupo13@gmail.com</li>
+            <li>Jujuy - Argentina - 2026</li>
+        </ul>
+    </div>
+</footer>
 </body>
 </html>
