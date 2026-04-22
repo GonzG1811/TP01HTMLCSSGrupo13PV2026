@@ -1,0 +1,114 @@
+:root {
+    --fuente-principal: 'roboto', 'Arial Narrow', Arial, sans-serif;
+    --color-azul-inicio: #0B4FE0;
+    --color-violeta-fin: #510BE0;
+    --color-azul-borde: rgb(59, 33, 255);
+    --color-blanco: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fuente-principal);
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+.contenedor-proyectos {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+
+.barra-filtros {
+    flex: 1; 
+    background: var(--color-blanco);
+    padding: 20px;
+    border-radius: 8px;
+    height: fit-content;
+    border-top: 5px solid var(--color-azul-borde);
+}
+
+.barra-filtros h2 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: var(--color-azul-inicio);
+}
+
+.formulario-filtro {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-filtro, .select-filtro {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.boton-filtro {
+    background: linear-gradient(to right, var(--color-azul-inicio), var(--color-violeta-fin));
+    color: var(--color-blanco);
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.lista-proyectos {
+    flex: 3; 
+}
+
+.titulo-seccion {
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--color-azul-inicio);
+    padding-bottom: 5px;
+}
+
+
+.card-proyecto {
+    background: var(--color-blanco);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.card-proyecto h3 {
+    margin-bottom: 10px;
+    color: var(--color-violeta-fin);
+}
+
+.img-proyecto {
+    width: 100%; 
+    max-width: 500px;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.tag {
+    color: var(--color-azul-inicio);
+    font-weight: bold;
+}
+
+.enlace-detalle {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--color-azul-inicio);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.enlace-detalle:hover {
+    text-decoration: underline;
+}

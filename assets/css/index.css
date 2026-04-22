@@ -4,7 +4,7 @@
     --color-azul-inicio: #0B4FE0;
     --color-violeta-fin: #510BE0;
     --color-blanco-titulo: white;
-    --color-azul-borde: rgb(59, 33, 255); /* El color de tu imagen */
+    --color-azul-borde: rgb(59, 33, 255); 
     --color-gris-borde: #ddd;
     --max-ancho-pagina: 1000px;
     
@@ -100,36 +100,35 @@ body {
 #cuerpo {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Esto centra el contenido horizontalmente */
+    align-items: center;
     text-align: left;
     min-height: 100vh;
-    padding: 60px 20px; /* 20px a los lados para que no toque el borde en celulares */
+    padding: 60px 20px; 
     border-top: 10px solid var(--color-azul-borde);
 }
 
 .contenido {
     width: 100%;
-    max-width: var(--max-ancho-pagina); /* Usa la variable del root */
-    margin: 0 auto; /* El "auto" a los lados es el truco para centrar */
+    max-width: var(--max-ancho-pagina);
+    margin: 0 auto; 
     margin-bottom: 50px;
 }
 
 .titulo-p, .titulo-sec, .titulo-primario {
-    font-size: 50px; /* Mantenemos el tamaño grande que pediste */
+    font-size: 50px; 
     margin-bottom: 25px;
     border-bottom: 1px solid var(--color-gris-borde);
     padding-bottom: 5px;
 }
 
-/* Listas */
 ul, .proyectos, .lista-tareas, .lista-historial {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: inline-block;
     text-align: left;
-    font-size: 1.1rem; /* Un poco más grande para que sea legible */
-    line-height: 1.8;   /* Más espacio entre líneas para que no se vea amontonado */
+    font-size: 1.1rem; 
+    line-height: 1.8;   
 }
 
 

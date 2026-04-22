@@ -1,0 +1,75 @@
+:root {
+    --fuente-principal: 'roboto', 'Arial Narrow', Arial, sans-serif;
+    --color-azul-inicio: #0B4FE0;
+    --color-violeta-fin: #510BE0;
+    --color-blanco: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    padding: 20px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.perfil-card {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+}
+
+.perfil-header {
+    background: linear-gradient(to right, var(--color-azul-inicio), var(--color-violeta-fin));
+    color: var(--color-blanco);
+    padding: 30px;
+    text-align: center;
+}
+
+.perfil-foto {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid var(--color-blanco);
+    margin-bottom: 10px;
+}
+
+.perfil-cuerpo {
+    padding: 20px;
+}
+
+.seccion-perfil h2 {
+    color: var(--color-azul-inicio);
+    margin: 20px 0 10px 0;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.dato-item {
+    margin-bottom: 10px;
+}
+
+.dato-item h4 {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.dato-item p {
+    font-weight: bold;
+}
+
+.perfil-footer {
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #eee;
+}
+
+.perfil-footer a {
+    color: var(--color-violeta-fin);
+    text-decoration: none;
+}

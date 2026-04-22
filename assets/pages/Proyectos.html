@@ -4,82 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyectos | Gestión Educativa UNJu</title>
+    <link rel="stylesheet" href="../css/proyecto.css"/>
 </head>
 <body>
-    <main>
-    <aside>
-        <h2>Filtrar Búsqueda</h2>
-        <form>
-            <label>Año:</label>
-            <input type="number" name="anio" placeholder="2026">
+    <main class="contenedor-proyectos">
+        
+        <aside class="barra-filtros">
+            <h2>Filtrar Búsqueda</h2>
+            <form class="formulario-filtro">
+                <label>Año:</label>
+                <input type="number" name="anio" placeholder="2026" class="input-filtro">
 
-            <label>Categoría:</label>
-                <select name="categoria">
-                <option value="html">HTML</option>
-                <option value="css">Diseño CSS</option>
-                <option value="js">JavaScript</option>
-                <option value="py">python</option>
-                <option value="cmas">c++</option>
-            </select>
+                <label>Categoría:</label>
+                <select name="categoria" class="select-filtro">
+                    <option value="html">HTML</option>
+                    <option value="css">Diseño CSS</option>
+                    <option value="js">JavaScript</option>
+                    <option value="py">Python</option>
+                    <option value="cmas">C++</option>
+                </select>
+
                 <label>Estado:</label>
-                <select name="estado">
-                <option value="EP">En proceso</option>
-                <option value="fo">finalizado</option>
-            </select>
+                <select name="estado" class="select-filtro">
+                    <option value="EP">En proceso</option>
+                    <option value="fo">Finalizado</option>
+                </select>
 
-            <button type="submit">Aplicar Filtros</button>
-        </form>
-    </aside>
+                <button type="submit" class="boton-filtro">Aplicar Filtros</button>
+            </form>
+        </aside>
 
-<section>
-    <h1>Explorador de Proyectos</h1>
+        <section class="lista-proyectos">
+            <h1 class="titulo-seccion">Explorador de Proyectos</h1>
 
-    <article>
-        <h3>Maquetado de Estructura Web</h3>
-        <img src="../img/html.jpg" alt="Vista previa HTML" width="500">
-        <p><strong>Descripcion:</strong> Creación de la estructura base de un sitio administrativo usando etiquetas semánticas.</p>
-        <p><strong>Categoria:</strong> HTML Puro</p>
-        <a href="detalle.html#detal-html">Ver detalle</a>
-    </article>
+            <article class="card-proyecto">
+                <h3>Maquetado de Estructura Web</h3>
+                <img src="../img/html.jpg" alt="Vista previa HTML" class="img-proyecto">
+                <p><strong>Descripción:</strong> Creación de la estructura base de un sitio administrativo usando etiquetas semánticas.</p>
+                <p><strong>Categoría:</strong> <span class="tag">HTML</span></p>
+                <a href="detalle.html#detal-html" class="enlace-detalle">Ver detalle</a>
+            </article>
 
-    <hr> <article>
-        <h3>Diseño Visual y Estilos</h3>
-        <img src="../img/css.jpg" alt="Vista previa CSS" width="500">
-        <p><strong>Descripcion:</strong> Aplicación de layouts modernos con Flexbox y Grid para mejorar la interfaz de usuario.</p>
-        <p><strong>Categoria:</strong> Diseño CSS</p>
-        <a href="detalle.html#detal-css">Ver detalle</a>
-    </article>
+            <article class="card-proyecto">
+                <h3>Diseño Visual y Estilos</h3>
+                <img src="../img/css.jpg" alt="Vista previa CSS" class="img-proyecto">
+                <p><strong>Descripción:</strong> Aplicación de layouts modernos con Flexbox y Grid para mejorar la interfaz de usuario.</p>
+                <p><strong>Categoría:</strong> <span class="tag">Diseño CSS</span></p>
+                <a href="Detalle-css.html" class="enlace-detalle">Ver detalle</a>
+            </article>
 
-    <hr>
+            <article class="card-proyecto">
+                <h3>Interactividad con JS</h3>
+                <img src="../img/javascript.jpg" alt="Logo JS" class="img-proyecto">
+                <p><strong>Descripción:</strong> Implementación de validaciones de formularios y sliders dinámicos para el explorador.</p>
+                <p><strong>Categoría:</strong> <span class="tag">JavaScript</span></p>
+                <a href="detalle-js.html" class="enlace-detalle">Ver detalle</a>
+            </article>
 
-    <article>
-        <h3>Interactividad con JS</h3>
-        <img src="../img/javascript.jpg" alt="Logo JS" width="500">
-        <p><strong>Descripcion:</strong> Implementación de validaciones de formularios y sliders dinámicos para el explorador.</p>
-        <p><strong>Categoria:</strong> JavaScript</p>
-        <a href="detalle.html#detal-javascript">Ver detalle</a>
-    </article>
+            <article class="card-proyecto">
+                <h3>Scripting y Automatización</h3>
+                <img src="../img/Python.jpg" alt="Vista previa Python" class="img-proyecto">
+                <p><strong>Descripción:</strong> Desarrollo de un script para procesar datos de alumnos y generar reportes automáticos.</p>
+                <p><strong>Categoría:</strong> <span class="tag">Python</span></p>
+                <a href="detalle.html#detal-python" class="enlace-detalle">Ver detalle</a>
+            </article>
 
-    <hr><!--es un guion-->
+            <article class="card-proyecto">
+                <h3>Algoritmos de Optimización</h3>
+                <img src="../img/c++.jpeg" alt="Vista previa C++" class="img-proyecto">
+                <p><strong>Descripción:</strong> Resolución de problemas de lógica compleja y manejo de memoria para sistemas de bajo nivel.</p>
+                <p><strong>Categoría:</strong> <span class="tag">C++</span></p>
+                <a href="Detalle-cpp.html" class="enlace-detalle">Ver detalle</a>
+            </article>
 
-    <article>
-        <h3>Scripting y Automatizacion</h3>
-        <img src="../img/Python.jpg" alt="Vista previa Python" width="500">
-        <p><strong>Descripcion:</strong> Desarrollo de un script para procesar datos de alumnos y generar reportes automáticos.</p>
-        <p><strong>Categoría:</strong> Python</p>
-        <a href="detalle.html#detal-python">Ver detalle</a>
-    </article>
-
-    <hr>
-
-    <article>
-        <h3>Algoritmos de Optimizacion</h3>
-        <img src="../img/c++.jpeg" alt="Vista previa C++" width="500">
-        <p><strong>Descripcion:</strong> Resolución de problemas de lógica compleja y manejo de memoria para sistemas de bajo nivel.</p>
-        <p><strong>Categoria:</strong> C++</p>
-        <a href="detalle.html#detal-cpp">Ver detalle</a><!--href archivo # id-->
-    </article>
-
-</section>
+        </section>
+    </main>
 </body>
 </html>
