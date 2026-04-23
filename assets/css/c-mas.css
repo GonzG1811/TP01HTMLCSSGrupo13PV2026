@@ -1,0 +1,60 @@
+/* 1. Definimos las variables al principio del documento */
+:root {
+    /* Paleta basada en tus colores actuales */
+    --color-titulo-texto: white;
+    --color-titulo-fondo: black;
+    --color-articulo-fondo: lightblue;
+    --color-articulo-texto: blue;
+    --color-texto-oscuro: black;
+    
+    /* Tipografía */
+    --fuente-principal: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* 2. Aplicamos las variables (Nota: Cambié 'div h1' a 'div h2' por la corrección del HTML) */
+#Detalles, div h2 {
+    color: var(--color-titulo-texto);
+    /* Puedes resumir el estilo, color y grosor del borde en una sola línea: */
+    border: 5px solid var(--color-titulo-fondo); 
+    border-radius: 5px;
+    background-color: var(--color-titulo-fondo);
+    text-align: center;
+    font-size: 40px;
+    background-image: url('https://www.shutterstock.com/image-illustration/c-code-on-dark-background-600nw-1896170293.jpg');
+    margin: 0;
+    padding: 0;
+}
+
+#Paso {
+    color: var(--color-texto-oscuro);
+    text-align: center;
+    font-size: 4ex; /* El uso de 'ex' está bien, aunque en la web actual se suele preferir 'em' o 'rem' */
+    font-family: var(--fuente-principal);
+}
+
+#fondo {
+    color: var(--color-articulo-texto);
+    background-color: var(--color-articulo-fondo);
+    border: 4px ridge var(--color-texto-oscuro); /* Cambiado a variable */
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+ul {
+    color: var(--color-texto-oscuro);
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/030/819/479/small/modern-abstract-pattern-triangle-low-polygon-shape-background-template-design-with-elegant-turquoise-blue-color-for-wallpaper-digital-backdrop-flyer-web-vector.jpg');
+    /* CORRECCIÓN: Tenías '0%px', que es un error de sintaxis que invalida la regla. */
+    padding: 0; 
+    margin: 0;
+
+}
+
+#iconos{
+
+    margin right: ;
+
+
+
+}
+
