@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/detalle-css.css">
     <title>Detalles Sobre CSS</title>
+    <style>
+        a:hover{
+            color: red;
+            background-color: lightgray;
+            border-radius: 5px;
+        }
+        a:active {
+             color: blue;
+         }
+
+        a:focus {
+            outline: 2px solid black;
+        }
+    </style>
 </head>
-<body>
+<body>  
     <header class="header">
         <nav class="navbar">
             <ul>
@@ -13,36 +28,40 @@
             </ul>
         </nav>
     </header>    
-    <body>
-        <h3>Selectores Avanzados</h3>
-    <p>CSS no trabaja solamente con etiquetas simples,sino que permite seleccionar elementos de manera muy precisa mediante:</p>
-    <ul>
-        <li>Clases(.clase)</li>
-        <li>ID(#id)</li>
-        <li>Selectores descendientes(div p)</li>
-        <li>Pseudo-clases(:hover, :focus)</li>
-        <li>Pseudo-elementos(::before,::after)</li>
-    </ul>
-    <h3>Posicionamiento en CSS</h3>
-    <p>El posicionamiento en CSS permite controlar cómo se ubican los elementos dentro de una página web. Esto se logra mediante la propiedad position, que define la relación del elemento con el flujo del documento y con otros elementos.</p>
-    <ul>
-        <li><strong>static -></strong> posición nomral, los elementos se ubican uno debajo del otro(flujo del documento)</li>
-        <li><strong>relative -></strong> se mueve respecto a su posición original, pero sigue ocupando su lugar</li>
-        <li><strong>absolute -></strong> sale del flujo y se posiciona respecto a su contenedor más cercano</li>
-        <li><strong>fixed -></strong> queda fijo en la pantalla, no se mueve con el scroll</li>
-        <li><strong>sticky -></strong> se comporta como relative y luego se fija al hacer scroll</li>
-    </ul>
-    <h3>Buenas Prácticas en CSS</h3>
-    <p>Para lograr un código CSS eficiente y fácil de mantener, es importante seguir ciertas buenas prácticas. En primer lugar, se recomienda <strong> separar el contenido del diseño</strong>, evitando el uso de estilos en línea y utilizando archivos CSS externos.</p>
-    <p>También es fundamental <strong>mantener una buena organización del código</strong>,agrupando las reglas de manera lógica y utilizando nombres de clases claros y descriptivos. Esto facilita la lectura y el trabajo en equipo. Una metodología común es usar estructuras de nombrado que permitan identificar fácilmente la función de cada elemento.</p> 
-    <p>Otra práctica importante es <strong>reutilzar estilos</strong>,evitando repetir código innecesariamente. Esto no solo reduce el tamaño del archivo, sino que también simplifica futuras modificaciones.</p>
+        <div class="cuadro">
+                <h3>Selectores Avanzados</h3>
+            <p style="color: red;">CSS no trabaja solamente con etiquetas simples,sino que permite seleccionar elementos de manera muy precisa mediante:</p>
+            <ul>
+                <li>Clases(.clase)</li>
+                <li>ID(#id)</li>
+                <li>Selectores descendientes(div p)</li>
+                <li>Pseudo-clases(:hover, :focus)</li>
+                <li>Pseudo-elementos(::before,::after)</li>
+            </ul>
+        </div>
+        <hr>
+    <div class="cuadro">
+        <h3>Posicionamiento en CSS</h3>
+        <p>El posicionamiento en CSS permite controlar cómo se ubican los elementos dentro de una página web. Esto se logra mediante la propiedad position, que define la relación del elemento con el flujo del documento y con otros elementos.</p>
+        <ul>
+            <li><strong>static -></strong> posición nomral, los elementos se ubican uno debajo del otro(flujo del documento)</li>
+            <li><strong>relative -></strong> se mueve respecto a su posición original, pero sigue ocupando su lugar</li>
+            <li><strong>absolute -></strong> sale del flujo y se posiciona respecto a su contenedor más cercano</li>
+            <li><strong>fixed -></strong> queda fijo en la pantalla, no se mueve con el scroll</li>
+            <li><strong>sticky -></strong> se comporta como relative y luego se fija al hacer scroll</li>
+        </ul>
+    </div>
+    <div class="flex">
+        <h3>Buenas Prácticas en CSS</h3>
+        <p>Para lograr un código CSS eficiente y fácil de mantener, es importante seguir ciertas buenas prácticas. En primer lugar, se recomienda <strong> separar el contenido del diseño</strong>, evitando el uso de estilos en línea y utilizando archivos CSS externos.</p>
+        <p>También es fundamental <strong>mantener una buena organización del código</strong>,agrupando las reglas de manera lógica y utilizando nombres de clases claros y descriptivos. Esto facilita la lectura y el trabajo en equipo. Una metodología común es usar estructuras de nombrado que permitan identificar fácilmente la función de cada elemento.</p> 
+        <p>Otra práctica importante es <strong>reutilzar estilos</strong>,evitando repetir código innecesariamente. Esto no solo reduce el tamaño del archivo, sino que también simplifica futuras modificaciones.</p>
+    </div>
+     
+    <div class="flex">
 
-
-        
-
-    </body>   
     <img src="../img/css.jpg" height="300px" width="500px">
-
+    </div>
 </body>
 
 </html>
